@@ -7,14 +7,11 @@ const HeaderComponent = () => {
 
   const controlNavbar = () => {
     if (window.scrollY > lastScrollY) {
-      // if scroll down hide the navbar
       setShow(false);
     } else {
-      // if scroll up show the navbar
       setShow(true);
     }
 
-    // remember current page location to use in the next move
     setLastScrollY(window.scrollY);
   };
 
@@ -29,7 +26,7 @@ const HeaderComponent = () => {
 
   return (
     <div
-      className={`fixed  left-0 w-full px-20 py-8 flex justify-between items-center bg-background border-b border-gray-700 shadow-sm ${
+      className={`fixed  left-0 w-full z-50 px-20 py-8 flex justify-between items-center bg-background border-b border-gray-700 shadow-sm ${
         show ? "top-0" : "-top-[20%]"
       } transition-all duration-200 ease-in-out`}
     >
