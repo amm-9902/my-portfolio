@@ -1,15 +1,25 @@
+import React from "react";
 import {
-  PiPhone,
   PiEnvelopeSimple,
   PiGithubLogo,
   PiLinkedinLogo,
+  PiPhone,
 } from "react-icons/pi";
 
 const ContactSection = () => {
   return (
-    <div id="contact">
-      <p className="font-semibold  text-gray-200 text-lg">CONTACT</p>
-      <div className="CONTACT flex flex-col gap-12">
+    <div
+      id="contact"
+      className="px-20 py-8 h-screen flex flex-col items-start gap-16 justify-center"
+    >
+      <p className="text-3xl font-bold mb-16 text-center w-full">Contacts</p>
+      <p className="text-2xl text-gray-400 py-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+        cum, quaerat dignissimos quod nostrum amet blanditiis quam, aut ea
+        deserunt sed nisi veniam et molestias consectetur! Maxime ad, ullam
+        error modi ratione autem, amet saepe dolore sunt ut sed eius!
+      </p>
+      <div className="grid grid-cols-2 w-full gap-20">
         <div className="flex items-center gap-4">
           <PiPhone className="text-4xl text-primary" />
           <p className="text-gray-400">+95 9 970064713</p>
@@ -29,7 +39,6 @@ const ContactSection = () => {
           </p>
         </div>
       </div>
-      <div className="h-24" />
     </div>
   );
 };

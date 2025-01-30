@@ -1,40 +1,58 @@
-import Image from "next/image";
-import React from "react";
-
-const skills = [
-  { skill: "Lorem", pic: "/svgs/next.svg", progress: "50%" },
-  { skill: "Lorem", pic: "/svgs/next.svg", progress: "50%" },
-  { skill: "Lorem", pic: "/svgs/next.svg", progress: "50%" },
-  { skill: "Lorem", pic: "/svgs/next.svg", progress: "50%" },
-  { skill: "Lorem", pic: "/svgs/next.svg", progress: "50%" },
-];
+import ProgressBarComponent from "../components/progress-bar";
 
 const SkillsSection = () => {
   return (
-    <div
-      id="skills"
-      className="px-20 py-8 h-screen flex flex-col items-center justify-center gap-20"
-    >
-      <p className="text-3xl font-bold mb-16 -mt-20">Skills</p>
-      <div className="flex items-center justify-center w-full flex-wrap gap-28">
-        {skills.map((s, i) => (
-          <div
-            key={i}
-            className="flex flex-col gap-4 justify-center items-center"
-          >
-            <p>{s.skill}</p>
-            <Image
-              src={s.pic}
-              alt="skill"
-              width={200}
-              height={200}
-              className="w-44 h-44"
-            />
-            <div className="w-full h-1 bg-black rounded-full overflow-hidden">
-              <div className={`w-[${s.progress}] bg-primary h-full`} />
-            </div>
-          </div>
-        ))}
+    <div id="skills">
+      <p className="font-semibold text-gray-200 mb-12 text-lg">SKILLS</p>
+      <div className="SKILLS grid grid-cols-2 gap-12">
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/html.svg"}
+          label={"HTML"}
+          delay={0.1}
+        />
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/css.svg"}
+          label={"CSS"}
+          delay={0.2}
+        />
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/tailwind.svg"}
+          label={"Tailwind"}
+          delay={0.3}
+        />
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/javascript.svg"}
+          label={"Javascript"}
+          delay={0.4}
+        />
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/typescript.svg"}
+          label={"Typescript"}
+          delay={0.5}
+        />{" "}
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/typescript.svg"}
+          label={"Typescript"}
+          delay={0.5}
+        />{" "}
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/react.svg"}
+          label={"React"}
+          delay={0.5}
+        />{" "}
+        <ProgressBarComponent
+          percentage={50}
+          icon={"/svgs/skills/redux.svg"}
+          label={"Redux"}
+          delay={0.5}
+        />
       </div>
     </div>
   );
