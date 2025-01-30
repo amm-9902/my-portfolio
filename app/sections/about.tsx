@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
     <div id="about" className="text-gray-400">
-      <p className="font-semibold text-gray-200 mb-12 text-lg">ABOUT</p>
+      <p className="font-semibold text-gray-200 mb-12 text-lg md:mb-6">ABOUT</p>
       <p className="text-gray-400">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
         voluptate molestias eveniet voluptatum enim veniam. Ea aut tempora

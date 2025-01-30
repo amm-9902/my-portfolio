@@ -8,7 +8,9 @@ import {
 const ContactSection = () => {
   return (
     <div id="contact">
-      <p className="font-semibold  text-gray-200 text-lg">CONTACT</p>
+      <p className="font-semibold  text-gray-200 text-lg mb-12 md:mb-6">
+        CONTACT
+      </p>
       <div className="CONTACT flex flex-col gap-12">
         <div className="flex items-center gap-4">
           <PiPhone className="text-4xl text-primary" />

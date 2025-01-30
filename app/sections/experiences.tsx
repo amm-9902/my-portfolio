@@ -4,7 +4,9 @@ import ExperienceComponent from "../components/experiences";
 const ExperiencesSection = () => {
   return (
     <div id="experiences">
-      <p className="font-semibold text-gray-200 mb-12 text-lg">EXPERIENCES</p>
+      <p className="font-semibold text-gray-200 mb-12 text-lg md:mb-6">
+        EXPERIENCES
+      </p>
       <div className="EXPERIENCE flex flex-col gap-12">
         <ExperienceComponent />
         <ExperienceComponent />
