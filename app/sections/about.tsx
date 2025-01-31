@@ -1,31 +1,38 @@
+import { motion } from "framer-motion";
+
 const AboutSection = () => {
   return (
-    <div id="about" className="text-gray-400">
+    <motion.div
+      initial={{ x: 10, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      viewport={{ once: true }}
+      id="about"
+      className="text-gray-400"
+    >
       <p className="font-semibold text-gray-200 mb-12 text-lg md:mb-6">ABOUT</p>
       <p className="text-gray-400">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        voluptate molestias eveniet voluptatum enim veniam. Ea aut tempora
-        facere? Est ullam sed incidunt excepturi labore voluptatibus facilis
-        amet fuga libero dolore unde, repudiandae quidem, alias deserunt
-        quibusdam porro? Fugiat, est adipisci? <br />
+        I&apos;m a passionate web designer and frontend developer with a keen
+        eye for aesthetics and user experience. With over a year of experience,
+        I specialize in creating visually appealing and responsive websites that
+        bring ideas to life. My goal is to craft seamless digital experiences
+        that balance creativity and functionality. <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        voluptate molestias eveniet voluptatum enim veniam. Ea aut tempora
-        facere? Est ullam sed incidunt excepturi labore voluptatibus facilis
-        amet fuga libero dolore unde, repudiandae quidem, alias deserunt
-        quibusdam porro? Fugiat, est adipisci? <br />
+        While my primary focus is frontend development, I also work on backend
+        technologies and continuously expand my knowledge in full-stack
+        development. I enjoy problem-solving and learning new frameworks, always
+        striving to improve my skills and build efficient, scalable solutions.{" "}
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        voluptate molestias eveniet voluptatum enim veniam. Ea aut tempora
-        facere? Est ullam sed incidunt excepturi labore voluptatibus facilis
-        amet fuga libero dolore unde, repudiandae quidem, alias deserunt
-        quibusdam porro? Fugiat, est adipisci? <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempora
-        minus sed iusto nemo sunt reiciendis eligendi voluptates excepturi
-        recusanda.
+        I take pride in delivering high-quality projects, whether it&apos;s
+        designing sleek interfaces or coding interactive web applications. My
+        approach is detail-oriented, ensuring that every project meets modern
+        design standards and user expectations. <br />
+        <br />
+        In my free time, I love to mess with animation, song designing and audio
+        mastering, and draw some weird app designs.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

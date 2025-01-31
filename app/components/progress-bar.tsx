@@ -31,7 +31,7 @@ const ProgressBarComponent = ({
             initial={{ width: 0 }}
             whileInView={{ width: `${percentage}%` }}
             viewport={{ once: true }}
-            transition={{ duration: 1, ease: "easeInOut", delay }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay }}
           />
         </div>
       </div>

@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-type NavItemComponentProps = { id: string; label: string };
-const NavItemComponent = ({ id, label }: NavItemComponentProps) => {
+type NavItemComponentProps = { id: string; label: string; motionVaiants?: any };
+const NavItemComponent = ({
+  id,
+  label,
+  motionVaiants,
+}: NavItemComponentProps) => {
   const [hover, setHover] = useState(false);
   return (
-    <a href={`#${id}`} className="w-max">
+    <motion.a variants={motionVaiants} href={`#${id}`} className="w-max">
       <motion.div
         initial={{ paddingLeft: "0" }}
         whileHover={{ paddingLeft: "50px" }}
@@ -28,7 +32,7 @@ const NavItemComponent = ({ id, label }: NavItemComponentProps) => {
         transition={{ duration: 0.2 }}
         className="h-1 bg-primary rounded-full"
       />
-    </a>
+    </motion.a>
   );
 };
 
